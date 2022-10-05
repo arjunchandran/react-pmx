@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import About from './Container/About';
 import Profile from './Container/Profile';
@@ -6,7 +5,6 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import {AppContext} from './Container/AppContext'
 
 function App() {
-  const [state, setState] = useState(100)
   const navigate = useNavigate()
   return (
     <div className='App'>

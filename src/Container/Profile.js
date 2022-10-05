@@ -1,5 +1,4 @@
 import React from 'react'
-import One from './Components/One'
 
 function Profile(props) {
   return (
