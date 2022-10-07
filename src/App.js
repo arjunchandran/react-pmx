@@ -15,8 +15,8 @@ function App() {
       <button className="noButton" onClick={() => navigate('/sorry')}>No</button>
       <AppContext.Provider value={{data:state}}>
         <Routes>
-          <Route element={<About />} path='/cmp' />
-          <Route path='/sorry'
+          <Route element={<About />} path='/react-pmx/cmp' />
+          <Route path='/react-pmx/sorry'
             element={<Profile></Profile>}>
           </Route>
         </Routes>
