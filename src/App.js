@@ -9,14 +9,14 @@ function App() {
   const [state] = useState(100);
   const navigate = useNavigate()
   return (
-    <div className='App'>
+    <div className='App' >
       <p><b>Are you serious about building your career ?</b></p>
       <button className="yesButton" onClick={() => navigate('/cmp')}>Yes</button><p className="Button">   </p>
       <button className="noButton" onClick={() => navigate('/sorry')}>No</button>
       <AppContext.Provider value={{data:state}}>
         <Routes>
-          <Route element={<About />} path='/react-pmx/cmp' />
-          <Route path='/react-pmx/sorry'
+          <Route element={<About style={{ textAlign:'center'}}/>} path='/cmp/*' />
+          <Route path='/sorry'
             element={<Profile></Profile>}>
           </Route>
         </Routes>
