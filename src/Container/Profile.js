@@ -2,7 +2,7 @@ import React from 'react'
 
 function Profile(props) {
   return (
-    <div style={{backgroundColor:'red'}}><h1>Sorry, cannot move further !</h1>
+    <div><h1 style={{color:'red'}}>Sorry, cannot move further !</h1>
     </div>
   )
 }

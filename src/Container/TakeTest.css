@@ -1,0 +1,16 @@
+.testButton{
+    width: auto;
+  font-size: 14px;
+  color: #000000;
+  background-color: #dfe217;
+  border-radius: 15px;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  padding: 8px;
+  height: auto;
+  margin-right: 10px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.4);
+}

@@ -1,3 +1,4 @@
+
 .questionnaireButton{
     width: 150px;
     font-size: 16px;
@@ -11,3 +12,34 @@
     cursor: pointer;
     padding: 10px;
 }
+
+.functionalButton{
+    width: auto;
+    font-size: 16px;
+    color: #030303;
+    background-color: #10e091;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown{
+  min-width: 15ch;
+  max-width: 50ch;
+  padding: 4px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: 3px solid #18324d;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #2d3657;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.4);
+}
+
+.options[value="please choose"][disabled] {
+    display: none;
+  }

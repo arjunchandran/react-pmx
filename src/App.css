@@ -22,6 +22,7 @@
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .noButton{
@@ -35,6 +36,7 @@
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 .App-logo {
