@@ -11,10 +11,10 @@ function BasePage() {
   const navigate = useNavigate()
   return (
     <div className='App' >
-      <p><b>Are you serious about building your career ?</b></p>
-      <p><b>What is career to you - an intermittent growth in a particular role or a life of joyful fullfilment and pride ?</b></p>
-      <p><b>Are you anxious about your career?</b></p>
-      <p><b>Are you willing to invest in yourself?</b></p>
+      <p><b><i>Are you serious about building your career ?</i></b></p>
+      <p><b><i>What is career to you - an intermittent growth in a particular role or a life of joyful fullfilment and pride ?</i></b></p>
+      <p><b><i>Are you anxious about your career?</i></b></p>
+      <p><b><i>Are you willing to invest in yourself?</i></b></p>
       {state && <button className="yesButton" onClick={() => navigate('/cmp')}>Yes</button>}
       {state && <button className="noButton" onClick={() => navigate('/sorry')}>No</button>}<p></p>
       <AppContext.Provider value={{data:state}}>

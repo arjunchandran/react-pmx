@@ -28,10 +28,10 @@ function About() {
           <br></br>Depending on your current portfolio, and your future expectations, you can choose each of the sub-specialised area or a generalist's role
           <br></br>It can be used by organisations to assess the talent pool of HR team and plan their development or succession</p></div>
       <div>
-        <h4>Choose your primary and secondary roles !</h4>
-        <h3>Primary Role</h3>
+        <h3 style={{color:'#ffff'}}>Choose your primary and secondary roles !</h3>
+        <h4 >Primary Role</h4>
         <MultiselectDropdown /><p></p>
-        <h3>SecondaryRole Role</h3>
+        <h4>SecondaryRole Role</h4>
         <select onChange={handleClick} className='dropdown' style={{color:'white'}}>
           <option className='options' value="" disabled selected hidden>Select your secondary role</option>
           <option className='options' value="volvo">Entry Level</option>

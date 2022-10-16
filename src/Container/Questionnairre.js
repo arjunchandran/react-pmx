@@ -60,7 +60,7 @@ function Questionnairre() {
   return (
 		<div className='Questionnairre'>
 			{showScore ? (
-				<div className='score-section'>
+				<div className='score-section' style={{color:"#ffff"}}>
 					You scored {score} out of {questions.length}
 				</div>
 			) : (
