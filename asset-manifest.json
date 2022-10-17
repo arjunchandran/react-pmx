@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/react-pmx/static/css/main.393426eb.css",
-    "main.js": "/react-pmx/static/js/main.f4984d21.js",
+    "main.css": "/react-pmx/static/css/main.83985588.css",
+    "main.js": "/react-pmx/static/js/main.eeb92685.js",
     "static/js/787.5cb0b425.chunk.js": "/react-pmx/static/js/787.5cb0b425.chunk.js",
+    "static/media/pexels-moose-photos-1037995.jpg": "/react-pmx/static/media/pexels-moose-photos-1037995.0cd0fa5d726cd123543b.jpg",
     "index.html": "/react-pmx/index.html",
-    "main.393426eb.css.map": "/react-pmx/static/css/main.393426eb.css.map",
-    "main.f4984d21.js.map": "/react-pmx/static/js/main.f4984d21.js.map",
+    "main.83985588.css.map": "/react-pmx/static/css/main.83985588.css.map",
+    "main.eeb92685.js.map": "/react-pmx/static/js/main.eeb92685.js.map",
     "787.5cb0b425.chunk.js.map": "/react-pmx/static/js/787.5cb0b425.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.393426eb.css",
-    "static/js/main.f4984d21.js"
+    "static/css/main.83985588.css",
+    "static/js/main.eeb92685.js"
   ]
 }
