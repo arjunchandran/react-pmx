@@ -21,14 +21,14 @@ function About() {
   return (
     <div className='aboutContent' >
       <div>
-        <h1 style={{color:'#ffff'}}>CMP</h1>
+        <h1 style={{color:'#0f3d6e'}}>CMP</h1>
         <h3>About CMP</h3>
         <p >CMP is a process tool to help you reflect yourself in a mirror with the global best practices in a particular field
           <br></br>It is a self - help reflective tool to identify your gaps vis-à-vis your expectations
           <br></br>Depending on your current portfolio, and your future expectations, you can choose each of the sub-specialised area or a generalist's role
           <br></br>It can be used by organisations to assess the talent pool of HR team and plan their development or succession</p></div>
       <div>
-        <h3 style={{color:'#ffff'}}>Choose your primary and secondary roles !</h3>
+        <h3 style={{color:'#0f3d6e'}}>Choose your primary and secondary roles !</h3>
         <h4 >Primary Role</h4>
         <MultiselectDropdown /><p></p>
         <h4>SecondaryRole Role</h4>
