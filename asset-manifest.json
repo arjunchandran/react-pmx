@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-pmx/static/css/main.6fda1428.css",
+    "main.css": "/react-pmx/static/css/main.6576d49c.css",
     "main.js": "/react-pmx/static/js/main.eeb92685.js",
     "static/js/787.5cb0b425.chunk.js": "/react-pmx/static/js/787.5cb0b425.chunk.js",
-    "static/media/pexels-moose-photos-1037995.jpg": "/react-pmx/static/media/pexels-moose-photos-1037995.0cd0fa5d726cd123543b.jpg",
+    "static/media/pink_ombre_gradient_blur_background_0509.jpg": "/react-pmx/static/media/pink_ombre_gradient_blur_background_0509.022760ae2abf4479b8b6.jpg",
+    "static/media/17973908.jpg": "/react-pmx/static/media/17973908.f42ecb4bc8e4c4ed24be.jpg",
     "index.html": "/react-pmx/index.html",
-    "main.6fda1428.css.map": "/react-pmx/static/css/main.6fda1428.css.map",
+    "main.6576d49c.css.map": "/react-pmx/static/css/main.6576d49c.css.map",
     "main.eeb92685.js.map": "/react-pmx/static/js/main.eeb92685.js.map",
     "787.5cb0b425.chunk.js.map": "/react-pmx/static/js/787.5cb0b425.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fda1428.css",
+    "static/css/main.6576d49c.css",
     "static/js/main.eeb92685.js"
   ]
 }
