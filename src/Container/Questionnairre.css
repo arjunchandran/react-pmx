@@ -12,7 +12,7 @@ body {
   
   @media (min-width: 769px){
   body {
-    background-image: url("./pexels-moose-photos-1037995.jpg");
+    background-image: url("./17973908.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -36,7 +36,9 @@ body {
   
   @media (max-width: 768px) {
      body{
-      background-image: url("./pexels-moose-photos-1037995.jpg");
+      background-image: url("./pink_ombre_gradient_blur_background_0509.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       display: flex;
       justify-content: center;
       align-items: center;
