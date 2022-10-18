@@ -10,6 +10,7 @@ body {
     font-family: "Verdana", cursive, sans-serif;
   }
   
+  @media (min-width: 769px){
   body {
     background-image: url("./pexels-moose-photos-1037995.jpg");
     background-repeat: no-repeat;
@@ -19,7 +20,6 @@ body {
     align-items: center;
     min-height: 100vh;
   }
-  
   .Questionnairre {
     background-color: #531a42;
     width: 100%;
@@ -31,6 +31,29 @@ body {
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: space-evenly;
+  }
+}
+  
+  @media (max-width: 768px) {
+     body{
+      background-image: url("./pexels-moose-photos-1037995.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    } 
+      .Questionnairre {
+        background-color: #531a42;
+        width: auto;
+        min-width: 300px;
+        min-height: 200px;
+        height: min-content;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: space-evenly;
+      }
   }
   
   .score-section {
