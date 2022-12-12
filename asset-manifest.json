@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-pmx/static/css/main.6576d49c.css",
-    "main.js": "/react-pmx/static/js/main.eeb92685.js",
+    "main.css": "/react-pmx/static/css/main.6c999401.css",
+    "main.js": "/react-pmx/static/js/main.28d2ea84.js",
     "static/js/787.5cb0b425.chunk.js": "/react-pmx/static/js/787.5cb0b425.chunk.js",
     "static/media/pink_ombre_gradient_blur_background_0509.jpg": "/react-pmx/static/media/pink_ombre_gradient_blur_background_0509.022760ae2abf4479b8b6.jpg",
     "static/media/17973908.jpg": "/react-pmx/static/media/17973908.f42ecb4bc8e4c4ed24be.jpg",
     "index.html": "/react-pmx/index.html",
-    "main.6576d49c.css.map": "/react-pmx/static/css/main.6576d49c.css.map",
-    "main.eeb92685.js.map": "/react-pmx/static/js/main.eeb92685.js.map",
+    "main.6c999401.css.map": "/react-pmx/static/css/main.6c999401.css.map",
+    "main.28d2ea84.js.map": "/react-pmx/static/js/main.28d2ea84.js.map",
     "787.5cb0b425.chunk.js.map": "/react-pmx/static/js/787.5cb0b425.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6576d49c.css",
-    "static/js/main.eeb92685.js"
+    "static/css/main.6c999401.css",
+    "static/js/main.28d2ea84.js"
   ]
 }
