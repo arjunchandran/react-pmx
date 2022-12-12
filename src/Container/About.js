@@ -2,18 +2,17 @@ import { React, useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import TakeTest from './TakeTest'
 import { AppContext } from './AppContext'
-import MultiselectDropdown from './MultiselectDropdown'
 import './About.css'
 
 function About() {
   const navigate = useNavigate()
   const [open] = useState('')
   const handleClick = _event => {
-    <button>Take Test</button>
+    <button>Select Roles</button>
     navigate('test');
     <AppContext.Provider value={{ data: open }}>
       <Routes>
-        <Route element={<TakeTest ></TakeTest>} path='test' />
+        <Route element={<TakeTest ></TakeTest>} path='test/*' />
       </Routes>
     </AppContext.Provider>
   };
@@ -29,11 +28,9 @@ function About() {
           <br></br>It can be used by organisations to assess the talent pool of HR team and plan their development or succession</p></div>
       <div>
         <h3 style={{color:'#0f3d6e'}}>Choose your primary and secondary roles !</h3>
-        <h4 >Primary Role</h4>
-        <MultiselectDropdown /><p></p>
-        <h4>SecondaryRole Role</h4>
+        <h4>Skill Level</h4>
         <select onChange={handleClick} className='dropdown' style={{color:'white'}}>
-          <option className='options' value="" disabled selected hidden>Select your secondary role</option>
+          <option className='options' value="" disabled selected hidden>Select your Skill Level</option>
           <option className='options' value="volvo">Entry Level</option>
           <option className='options' value="saab">Jr. Management</option>
           <option className='options' value="mercedes">Middle Management</option>
@@ -41,7 +38,7 @@ function About() {
         </select><p></p>
         <AppContext.Provider value={{ data: open }}>
       <Routes>
-        <Route element={<TakeTest ></TakeTest>} path='test' />
+        <Route element={<TakeTest ></TakeTest>} path='test/*' />
       </Routes>
     </AppContext.Provider>
       </div>

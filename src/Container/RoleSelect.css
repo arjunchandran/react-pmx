@@ -1,0 +1,35 @@
+td,
+th {
+  padding: 0.5rem 1rem;
+}
+
+.tableId {
+  display: none;
+}
+
+.heading {
+  color: rgb(138, 220, 245);
+}
+
+@media (min-width: 769px) {
+  .TableComponent {
+    background-color: #531a42;
+    width: 100%;
+    min-width: 800px;
+    color: azure;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .TableComponent {
+    background-color: #3e1a53;
+    color: azure;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  }
+}

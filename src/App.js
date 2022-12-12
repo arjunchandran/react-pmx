@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import {AppContext} from './Container/AppContext'
 import Questionnairre from './Container/Questionnairre';
 import BasePage from './BasePage'
+import RoleSelect from './Container/RoleSelect';
 
 function App() {
   const [state, setState] = useState(true);
@@ -16,6 +17,7 @@ function App() {
         <Route element={<BasePage setState={setState} style={{ textAlign:'center'}}/>} path='/react-pmx/*' />
           <Route element={<About setState={setState} style={{ textAlign:'center'}}/>} path='/cmp/*' />
           <Route element={<Questionnairre style={{ width: 'auto', textAlign:'center'}}/>} path='/questionnairre/*' />
+          <Route element={<RoleSelect style={{ width: 'auto', textAlign:'center'}}/>} path='/roleselect/*' />
           <Route path='/sorry'
             element={<Profile></Profile>}>
           </Route>

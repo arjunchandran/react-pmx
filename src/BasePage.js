@@ -5,6 +5,8 @@ import Profile from './Container/Profile';
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import {AppContext} from './Container/AppContext'
 import Questionnairre from './Container/Questionnairre';
+import RoleSelect from './Container/RoleSelect';
+import TakeTest from './Container/TakeTest';
 
 function BasePage() {
   const [state, setState] = useState(true);
@@ -21,6 +23,8 @@ function BasePage() {
         <Routes>
           <Route element={<About setState={setState} style={{ textAlign:'center'}}/>} path='/cmp/*' />
           <Route element={<Questionnairre style={{ width: 'auto', textAlign:'center'}}/>} path='/questionnairre/*' />
+          <Route element={<TakeTest style={{ width: 'auto', textAlign:'center'}}/>} path='/test/*' />
+          <Route element={<RoleSelect style={{ width: 'auto', textAlign:'center'}}/>} path='/roleselect/*' />
           <Route path='/sorry'
             element={<Profile></Profile>}>
           </Route>
