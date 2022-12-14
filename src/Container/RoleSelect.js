@@ -1,7 +1,9 @@
 import "./RoleSelect.css"
 import React, { useState } from "react"
 import { Container } from "react-bootstrap";
-import TestButton from "./TestButton";
+import { Route, Routes, useNavigate } from 'react-router-dom'
+import { AppContext } from './AppContext'
+import Questionnairre from './Questionnairre'
 
 function RoleSelect() {
   const skills = [
@@ -20,9 +22,14 @@ function RoleSelect() {
   ];
 
   const NONE_SELECTED_ID = -1;
+  var primarySkill="";
+  var secondarySkill="";
 
   const [primarySkillId, setPrimarySkillId] = useState(NONE_SELECTED_ID);
   const [secondarySkillIds, setSecondarySkillIds] = useState([]);
+
+  const navigate = useNavigate()
+  const [open] = useState('')
 
   const recordSecondarySkills = (checkbox, skillId) => {
     if (checkbox.checked) {
@@ -38,7 +45,15 @@ function RoleSelect() {
       );
     }
   };
-
+  const handleClick = () => {
+    primarySkill = skills.find((skill) => skill.id === primarySkillId).name;
+    secondarySkill = secondarySkillIds
+    .map((id) => skills.find((skill) => skill.id === id).name)
+    .join(", ");
+    localStorage.setItem("primarySkill",primarySkill);
+    localStorage.setItem("secondarySkill",secondarySkill);
+    navigate('/questionnairre')
+  }
   return (
     <Container className="tableDiv">
       <h1>Select your Primary and Secondary skills</h1>
@@ -79,32 +94,13 @@ function RoleSelect() {
           </tbody>
         </table>
       </div>
-      <div>
-        <h3>Selection</h3>
-        <div>
-          <span>Primary Skills: </span>
-          {primarySkillId !== -1 ? (
-            <span>
-              {skills.find((skill) => skill.id === primarySkillId).name}
-            </span>
-          ) : (
-            <i>None</i>
-          )}
-        </div>
-        <div>
-          <span>Secondary Skills: </span>
-          {secondarySkillIds.length !== 0 ? (
-            <span>
-              {secondarySkillIds
-                .map((id) => skills.find((skill) => skill.id === id).name)
-                .join(", ")}
-            </span>
-          ) : (
-            <i>None</i>
-          )}
-        </div>
-      </div><br/>
-      <TestButton/>
+      <br/>
+      <button className='testButton' onClick={handleClick}>Take Test</button>
+        <AppContext.Provider value={{ data: open }}>
+          <Routes>
+            <Route element={<Questionnairre/>} path='/questionnairre' />
+          </Routes>
+        </AppContext.Provider>
     </Container>
   );
 }
